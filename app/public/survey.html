@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script> -->
+  </head>
+
+  <body>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-12 col-centered">
+          <div class="row">
+            <div class="col-12">
+              <div class="card text-dark bg-light mb-3" style="text-align: center; vertical-align: middle; padding: 10px">
+                <div class="card-body">
+                  <h1>Survey Questions</h1>
+                  <hr style="background-color: #bbbbdd;">
+                  <div style="font-size: 28px; font-weight: bold; text-align: left;">About You</div>
+
+                  <form action="/api/friends" method="POST">
+
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>Name (Required):</label>
+	                    <input name="name" class="form-control mr-sm-2" type="text">
+	                  </p>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>Link to Photo Image (Required):</label>
+	                    <input name="photo" class="form-control mr-sm-2" type="text">
+	                  </p>
+
+	                  <br>
+	                  <hr style="background-color: #bbbbdd;">
+
+	                  <!-- 1 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 1</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>Your mind is always buzzing with unexplored ideas an plans.</label>
+						<select class="form-control mr-sm-2" name="select1">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+	                  
+	                  <!-- 2 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 2</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>Generally speaking, you rely more on your experience than your imagination.</label>
+						<select class="form-control mr-sm-2" name="select2">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+	                  
+	                  <!-- 3 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 3</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>You find it easy to stay relaxed and focused even when there is some pressure.</label>
+						<select class="form-control mr-sm-2" name="select3">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+	                  
+	                  <!-- 4 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 4</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>You rarely do something just out of sheer curiosity.</label>
+						<select class="form-control mr-sm-2" name="select4">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+	                  
+	                  <!-- 5 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 5</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>People can rarely upset you.</label>
+						<select class="form-control mr-sm-2" name="select5">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+	                  
+	                  <!-- 6 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 6</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>It is often difficult for you to relate to other people’s feelings.</label>
+						<select class="form-control mr-sm-2" name="select6">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+	                  
+	                  <!-- 7 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 7</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>In a discussion, truth should be more important than people’s sensitivities.</label>
+						<select class="form-control mr-sm-2" name="select7">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+	                  
+	                  <!-- 8 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 8</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>You rarely get carried away by fantasies and ideas.</label>
+						<select class="form-control mr-sm-2" name="select8">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+	                  
+	                  <!-- 9 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 9</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+						<select class="form-control mr-sm-2" name="select9">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+	                  
+	                  <!-- 10 -->
+	                  <div style="font-size: 28px; font-weight: bold; text-align: left;">Question 10</div>
+	                  <p style="font-size: 18px; text-align: left;">
+	                    <label>You feel more energetic after spending time with a group of people.</label>
+						<select class="form-control mr-sm-2" name="select10">
+						  <option value=""></option>
+						  <option value="1">1 (strongly disagree)</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5 (strongly agree)</option>
+						</select>
+	                  </p>
+
+	                  <input type="submit" class="btn btn-secondary" style="cursor: pointer;" type="button" value="Submit Answers &raquo;">
+
+	                </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p style="text-align: center;">&copy; Bootcamp UT! 2017</p>
+    </footer>
+  </body>
+
+</html>
